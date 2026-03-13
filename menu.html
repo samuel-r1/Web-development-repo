@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Breakfast Delight</title>
+		<link rel="icon" type="image/x-icon" href="images/fork.jpg">
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="logo">
+        <a href ="main_page.html" ><img src="images/fork.jpg" alt="Restaurant logo" width="50" height="50"></a>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="main_page.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<h1 style="color:white; text-align: center; font-family:Georgia;">Here is our Menu:</h1>
+<h2 >Main dishes:</h2>
+<table border=1;> 
+	<tr>
+		<th>Food item</th>
+		<th style = "text-align: center;">Description</th>
+		<th>Price</th>
+	</tr>
+
+	<tr>
+		<td>Chicken and Waffles</td>
+		<td>Cheddar corn waffle with breaded chicken combined with syrup to make a delicous breakfast choice</td>
+		<td>$10.00</td>
+	</tr>
+	<tr>
+		<td>The Pancake Platter</td>
+		<td>This dish comes with 3 slices of pancakes with syrup and eggs on the side</td>
+		<td>$9.00</td>
+	</tr>
+	<tr>
+		<td>Two eggs and Coffee</td>
+		<td>Two eggs of any style accompanied with toast, and coffee</td>
+		<td>$5.00</td>
+	</tr>
+	<tr>
+		<td>Egg and Cheese Omelette</td>
+		<td>Egg omelette with a side of bacon and french toast</td>
+		<td>$9.00</td>
+	</tr>
+	<tr>
+		<td>Bacon Egg and Cheese sanwhich</td>
+		<td>The classic New York breakfast has come to our restaurant and we serve it with any choice of bread</td>
+		<td>$7.00</td>
+	</tr>
+	<tr>
+		<td>Breakfast Burrito</td>
+		<td>Eggs, black beans, roasted potato, all in a burrito, alongside a side of bacon</t>
+		<td>$10.00</td>
+	</tr>
+</table>
+<h2>Drinks and Bevarages:</h2>
+
+<table class="menu" border = 1;>
+	<tr>
+		<th>Drink item</th>
+		<th style = "text-align: center;">Description</th>
+		<th>Price</th>
+	</tr>
+	<tr>
+		<td>Regular Coffee</td>
+		<td>Can be any customization, milk or sugar, cream also available</td>
+		<td>$5.00</td>
+	</tr>
+	<tr>
+		<td>Cappuccino</td>
+		<td>Espresso topped with steamed milk and foam for a rich flavor.</td>
+		<td>$6.00</td>
+	</tr>
+	<tr>
+		<td>Orange/Apple juice</td>
+		<td>Fresh from the farm and ready to be drank with any breakfast</td>
+		<td>$2.75</td>
+
+	</tr>
+	<tr>
+		<td>Iced Coffee</td>
+		<td>Smooth cold coffee served over ice with optional cream and sugar.</td>
+		<td>$6.00</td>
+	</tr>
+	<tr>
+		<td>Tea</td>		
+		<td>Perfect choice for cold weather</td>
+		<td>$3.00</td>
+	</tr>
+</table>
+
+
+
+<h1> Check out some of our dishes below: </h1>
+<div class="slider">
+    <img class="slide" src="images/Pancakes2.jpg">
+    <img class="slide" src="images/dining_room.jpg">
+    <img class="slide" src="images/chickenwaffles.jpg">
+    <img class="slide" src="images/omelette.jpg">
+    <img class="slide" src="images/coffee.jpg">
+    <img class="slide" src="images/burrito.jpg">
+</div>
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide(){
+
+    slides.forEach(slide => {
+        slide.style.display = "none";
+    });
+    index++;
+
+    if(index > slides.length){
+        index = 1;
+    }
+    slides[index-1].style.display = "block";
+    setTimeout(showSlide, 3000);
+}
+showSlide();
+</script>
+
+<footer class="footer">
+<div class="footer-container">
+    <div class="hours">  
+        <h3 style='color:white;'>Business hours:</h3>
+        <p>Monday - Friday: 7AM - 9PM </p>
+        <p>Saturday: 9AM - 9PM</p>
+    </div>
+
+    <div class="socials">
+        <h3 style="color: white;">Socials:</h3>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+    </div>
+
+</div>
+<p>© 2026 Breakfast Delight Restaurant</p>
+</footer>
+
+</body>
+</html>
